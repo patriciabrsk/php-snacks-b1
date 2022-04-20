@@ -62,7 +62,7 @@
             <p>
                 <?php 
                     for($i = 0; $i < count($db["teachers"]); $i++) {
-                        echo $db["teachers"][$i]["name"] . " " . $db["teachers"][$i]["lastname"] . "\n";
+                        echo $db["teachers"][$i]["name"] . " " . $db["teachers"][$i]["lastname"] . "<br>";
                     }
                 ?>
             </p>
@@ -71,7 +71,7 @@
             <p>
                 <?php 
                     for($i = 0; $i < count($db["pm"]); $i++) {
-                        echo $db["pm"][$i]["name"] . " " . $db["pm"][$i]["lastname"] . "\n";
+                        echo $db["pm"][$i]["name"] . " " . $db["pm"][$i]["lastname"] . "<br>";
                     }
                 ?>
             </p>
