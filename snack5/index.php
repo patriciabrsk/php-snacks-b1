@@ -9,8 +9,7 @@
     lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. 
     It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. 
     Gregor then turned to look out the window at the dull weather.";
-    $paragraphs_by_dot = explode(".", $paragraphs);
-    var_dump($paragraphs_by_dot);
+    $paragraphs_by_dot = explode(".", $paragraph);
 ?>
 
 <!DOCTYPE html>
@@ -24,9 +23,7 @@
 <body>
     <main>
         <?php for($i = 0; $i < count($paragraphs_by_dot); $i++) {?>
-            <p>
-                <?php echo $paragraphs_by_dot[$i]; ?>
-            </p>
+            <?php echo '<p>' . implode('</p><p>', $paragraphs_by_dot) . '</p>';?> 
         <?php }?>
     </main>
 </body>
