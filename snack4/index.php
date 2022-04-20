@@ -2,13 +2,9 @@
     // Creare un array con 15 numeri casuali, tenendo conto che l'array non dovrà contenere lo stesso numero più di una volta
 
     $rand_array = [];
-    for ($i = 0; $i < 15; $i++) {
-        $random_num = rand();
-        if(!in_array($random_num, $rand_array)) {
-            array_push($rand_array, $random_num);
-        }
+    while (count($rand_array) < 15) {
+        $rand_num = rand();
     }
-    var_dump($rand_array);
 ?>
 
 <!DOCTYPE html>
@@ -22,9 +18,7 @@
 <body>
     <main>
         <?php 
-            // echo "<table>";
-            // echo $rand_array;
-            // echo "</table>";
+            print_r($rand_array);
         ?>
     </main>
 </body>
