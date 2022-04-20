@@ -65,9 +65,9 @@
                 // for($i = 0; $i < count($posts); $i++) {
                 //     echo array_values($posts[$i]);
                 // }
-                foreach () {
+                // foreach () {
                     
-                }
+                // }
             ?>
         </p>
     </main>
