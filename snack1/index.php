@@ -22,7 +22,7 @@
         ]
     ];
 
-    // for($i=0, $i < count($basketballGames); $i++;) {
+    // for($i = 0; $i < count($basketballGames); $i++) {
     //     echo $basketballGames[$i]["team1"] . " - " . $basketballGames[$i]["team2"] . 
     //     " | " . $basketballGames[$i]["team1Pts"] . " - " . $basketballGames[$i]["team2Pts"];
     // }
@@ -38,11 +38,14 @@
 </head>
 <body>
     <main>
-        <?php for($i=0, $i < count($basketballGames); $i++;) { ?>
-            <p><?php echo $basketballGames[$i]["team1"] . " - " . $basketballGames[$i]["team2"]; ?> | 
-            <?php echo $basketballGames[$i]["team1Pts"] . " - " . $basketballGames[$i]["team2Pts"];?>
-            </p>
-        <?php }?>
+        <p>
+            <?php 
+                for($i = 0; $i < count($basketballGames); $i++) {
+                    echo $basketballGames[$i]["team1"] . " - " . $basketballGames[$i]["team2"] . 
+                    " | " . $basketballGames[$i]["team1Pts"] . " - " . $basketballGames[$i]["team2Pts"];
+                }
+            ?>
+        </p>
     </main>
 </body>
 </html>
