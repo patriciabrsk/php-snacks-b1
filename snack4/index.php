@@ -3,7 +3,10 @@
 
     $rand_array = [];
     while (count($rand_array) < 15) {
-        $rand_num = rand();
+        $rand_num = rand(1,100);
+        if(!in_array($rand_num, $rand_array)) {
+            $rand_array[] = $rand_num;
+        }
     }
 ?>
 
@@ -18,7 +21,7 @@
 <body>
     <main>
         <?php 
-            print_r($rand_array);
+            var_dump($rand_array);
         ?>
     </main>
 </body>
