@@ -68,13 +68,13 @@
             $postsKeys = array_keys($posts);
 
             for($i = 0; $i < count($postsKeys); $i++) { ?>
-                <h5>
-                    <?php echo $postKeys[$i]; ?>
-                </h5>
+                <h4>
+                    <?php echo $postsKeys[$i]; ?>
+                </h4>
                 <?php for($index = 0; $index < count($postsValues[$i]); $index++) { ?>
-                    <h6>
+                    <h4>
                         <?php echo $postsValues[$i][$index]["title"]; ?>
-                    </h6>
+                    </h4>
                     <p>
                     <?php echo $postsValues[$i][$index]["author"]; ?>
                     </p>
