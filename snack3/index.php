@@ -60,16 +60,29 @@
 </head>
 <body>
     <main>
-        <p>
-            <?php 
-                // for($i = 0; $i < count($posts); $i++) {
-                //     echo array_values($posts[$i]);
-                // }
-                // foreach () {
-                    
-                // }
-            ?>
-        </p>
+        <!-- foreach ($posts as $post => $values) {
+            
+        } -->
+        <?php 
+            $postsValues = array_values($posts);
+            $postsKeys = array_keys($posts);
+
+            for($i = 0; $i < count($postsKeys); $i++) { ?>
+                <h5>
+                    <?php echo $postKeys[$i]; ?>
+                </h5>
+                <?php for($index = 0; $index < count($postsValues[$i]); $index++) { ?>
+                    <h6>
+                        <?php echo $postsValues[$i][$index]["title"]; ?>
+                    </h6>
+                    <p>
+                    <?php echo $postsValues[$i][$index]["author"]; ?>
+                    </p>
+                    <p>
+                    <?php echo $postsValues[$i][$index]["text"]; ?>
+                    </p>
+                <?php } ?>       
+            <?php } ?>
     </main>
 </body>
 </html>
