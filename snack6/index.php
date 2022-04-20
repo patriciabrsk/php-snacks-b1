@@ -35,12 +35,21 @@
     <title>Snack 6</title>
 
     <style>
+        main.container {
+            display: flex;
+            margin: 50px;
+            justify-content: center;
+            align-items: center;
+        }
         .teachers {
             background-color: grey;
+            margin-right: 10px;
         }
         .teachers, 
         .pm {
+            padding: 15px;
             color: white;
+            width: 200px;
         }
         .pm {
             background-color: green;
@@ -48,22 +57,25 @@
     </style>
 </head>
 <body>
-    <main>
-        div.
-        <p class="teachers">
-            <?php 
-                for($i = 0; $i < count($db["teachers"]); $i++) {
-                    echo $db["teachers"][$i]["name"] . " " . $db["teachers"][$i]["lastname"];
-                }
-            ?>
-        </p>
-        <p class="pm">
-            <?php 
-                for($i = 0; $i < count($db["pm"]); $i++) {
-
-                }
-            ?>
-        </p>
+    <main class="container">
+        <div class="teachers">
+            <p>
+                <?php 
+                    for($i = 0; $i < count($db["teachers"]); $i++) {
+                        echo $db["teachers"][$i]["name"] . " " . $db["teachers"][$i]["lastname"];
+                    }
+                ?>
+            </p>
+        </div>
+        <div class="pm">
+            <p>
+                <?php 
+                    for($i = 0; $i < count($db["pm"]); $i++) {
+                        echo $db["pm"][$i]["name"] . " " . $db["pm"][$i]["lastname"];
+                    }
+                ?>
+            </p>
+        </div>
     </main>
 </body>
 </html>
