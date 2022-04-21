@@ -1,0 +1,19 @@
+main.container {
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.teachers {
+    background-color: grey;
+    margin-right: 10px;
+}
+.teachers, 
+.pm {
+    padding: 15px;
+    color: white;
+    width: 200px;
+}
+.pm {
+    background-color: green;
+}
